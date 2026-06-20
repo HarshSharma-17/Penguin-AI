@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://192.168.29.63:5000",
+  baseURL: "https://penguin-ai-1t7q.onrender.com",
   timeout: 10000,
 });
 
