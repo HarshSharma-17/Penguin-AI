@@ -229,16 +229,14 @@ export default function HomeScreen() {
             <TouchableOpacity
               style={styles.actionButton}
               onPress={() =>
-                alert(
-                  "Download feature coming soon 🚀"
-                )
+                alert("Download feature coming soon 🚀")
               }
             >
               <Text style={styles.actionText}>
                 Download
               </Text>
             </TouchableOpacity>
-
+          
             <TouchableOpacity
               style={styles.actionButton}
               onPress={handleShare}
@@ -247,15 +245,16 @@ export default function HomeScreen() {
                 Share
               </Text>
             </TouchableOpacity>
-            <TouchableOpacity
-              style={styles.regenerateButton}
-              onPress={handleGenerateAgain}
-            >
-              <Text style={styles.regenerateText}>
-                🔄 Generate Again
-              </Text>
-            </TouchableOpacity>
           </View>
+          
+          <TouchableOpacity
+            style={styles.regenerateButton}
+            onPress={handleGenerateAgain}
+          >
+            <Text style={styles.regenerateText}>
+              Generate Again 
+            </Text>
+          </TouchableOpacity>
         </View>
       ) : (
         <View style={styles.emptyCard}>
@@ -273,7 +272,7 @@ const styles = StyleSheet.create({
     flexGrow: 1,
     backgroundColor: "#F8FAFC",
     paddingHorizontal: 20,
-    paddingTop: 60,
+    paddingTop: 80,
     paddingBottom: 30,
   },
 
@@ -292,6 +291,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   trendingContainer: {
+    marginTop: 40,
     marginBottom: 20,
   },
   
@@ -354,8 +354,8 @@ const styles = StyleSheet.create({
   },
 
   selectedStyleChip: {
-    backgroundColor: "#2563EB",
-    borderColor: "#2563EB",
+    backgroundColor: "#1e1e1f",
+    borderColor: "#232426",
   },
 
   styleChipText: {
@@ -390,7 +390,7 @@ const styles = StyleSheet.create({
   },
 
   generateButton: {
-    backgroundColor: "#2563EB",
+    backgroundColor: "#1e1f20",
     paddingVertical: 18,
     borderRadius: 16,
     alignItems: "center",
@@ -444,22 +444,22 @@ const styles = StyleSheet.create({
 
   actionButton: {
     flex: 0.48,
-    backgroundColor: "#EFF6FF",
+    backgroundColor: "#fdfefe",
     borderWidth: 1,
-    borderColor: "#BFDBFE",
-    paddingVertical: 14,
+    borderColor: "#1d1e1f",
+    paddingVertical: 12,
     borderRadius: 12,
     alignItems: "center",
   },
 
   actionText: {
-    color: "#2563EB",
+    color: "#0b0b0b",
     fontWeight: "600",
     fontSize: 15,
   },
   regenerateButton: {
     marginTop: 15,
-    backgroundColor: "#2563EB",
+    backgroundColor: "#1e1f20",
     borderRadius: 12,
     paddingVertical: 14,
     alignItems: "center",
